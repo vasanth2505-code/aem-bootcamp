@@ -1,0 +1,14 @@
+<sly data-sly-use.header="com.aembootcamp.core.models.HeaderModel">
+
+    ${header.toString}
+
+    ${header.file}
+    ${header.altText}
+    ${header.logoLink}
+
+    <ul data-sly-list.nav="${header.headerNavigationItemsList}">
+        <li> Navigations : ${nav.rootPath} </li>
+    </ul>
+
+</sly>
+
